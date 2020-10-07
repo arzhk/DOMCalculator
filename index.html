@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #121212;
+      }
+      .numericButton {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border: none;
+        font-weight: bold;
+        font-size: 26px;
+        transition: ease-in-out 0.15s;
+        font-family: "Roboto", sans-serif;
+        background-color: #fafafa;
+        background-image: linear-gradient(135deg, #fafafa 0%, #c8c8c8 100%);
+
+      }
+
+      #calculator {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      #result {
+        height: 80px;
+        width: 282px;
+        text-align: right;
+        font-weight: bold;
+        font-size: 40px;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        margin-bottom: 10px;
+        color: white;
+        background-color:#181818;
+        border: 1px solid #383838;
+        border-radius: 8px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .functionButton {
+        background-color: #ff9356;
+        background-image: linear-gradient(315deg, #ff9356 0%, #fecf54 100%);
+        );
+      }
+      .numericButton:focus {
+        outline: none;
+      }
+
+      .numericButton:active {
+        border: 4px solid #c7c7c7;
+        background-color: #c7c7c7;
+      }
+
+      .functionButton:active {
+        border: 4px solid #eb8951;
+        background-color:  #eb8951;
+      }
+
+      td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" id="result" value="0" disabled />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="numericButton" value="7" />
+          </td>
+          <td>
+            <input type="button" class="numericButton" value="8" />
+          </td>
+          <td>
+            <input type="button" class="numericButton" value="9" />
+          </td>
+          <td>
+            <input
+              type="button"
+              class="numericButton functionButton"
+              value="*"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="numericButton" value="4" />
+          </td>
+          <td>
+            <input type="button" class="numericButton" value="5" />
+          </td>
+          <td>
+            <input type="button" class="numericButton" value="6" />
+          </td>
+          <td>
+            <input
+              type="button"
+              class="numericButton functionButton"
+              value="-"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="numericButton" value="1" />
+          </td>
+          <td>
+            <input type="button" class="numericButton" value="2" />
+          </td>
+          <td>
+            <input type="button" class="numericButton" value="3" />
+          </td>
+          <td>
+            <input
+              type="button"
+              class="numericButton functionButton"
+              value="+"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              class="numericButton functionButton"
+              value="C"
+            />
+          </td>
+          <td>
+            <input type="button" class="numericButton" value="0" />
+          </td>
+          <td>
+            <input
+              type="button"
+              class="numericButton functionButton"
+              value="="
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              class="numericButton functionButton"
+              value="/"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
